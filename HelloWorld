@@ -1,0 +1,16 @@
+package viikkotehtavia;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class JUnitTesti {
+
+	@Test
+	public void testHelloWorld() {
+		int result = 7 + 2;
+		assertEquals(9, result);
+	}
+
+}
+
