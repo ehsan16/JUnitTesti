@@ -1,15 +1,26 @@
-package viikkotehtavia;
+package viikkotehtavat;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
 class JUnitTesti {
-
+	@Test
+	public void testSumOfIntegers() {
+		int result = 7 + 2; 
+		assertEquals(9, result);
+		}
+	@Test
+	public void testHelloLength() {
+		assertEquals(5, "Hello".length());
+	}
+	
 	@Test
 	public void testHelloWorld() {
-		int result = 7 + 2;
-		assertEquals(9, result);
+		String text = "Hello World!";
+		String changedText = text.replace("World", "JUnit");
+		
+		assertEquals("Hello JUnit!", changedText);
 	}
 
 }
